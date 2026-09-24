@@ -3,7 +3,7 @@
         id: "vishnu",
         name: { en: "Mahā Viṣṇu", ml: "മഹാവിഷ്ണു" },
         title: { en: "The Preserver of Dharma", ml: "സ്ഥിതികാരകനായ പരമാത്മാവ്" },
-        image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=600&q=80",
+        image: "./assets/images/devata/mahavishnu.png",
         mantras: {
           moola: "ॐ नमो नारायणाय ॥ (ഓം നമോ നാരായണായ)",
           dhyanam: "शान्ताकारं भुजगशयनं पद्मनाभं सुरेशं विश्वाधारं गगनसदृशं मेघवर्णं शुभाङ्गम् । लक्ष्मीकान्तं कमलनयनं योगिभिर्ध्यानगम्यं वन्दे विष्णुं भवभयहरं सर्वलोकैकनाथम् ॥",
@@ -35,7 +35,7 @@
         id: "shiva",
         name: { en: "Śiva / Rudra", ml: "ശിവൻ / രുദ്രൻ" },
         title: { en: "The Auspicious Lord of Transformation", ml: "മംഗളസ്വരൂപനായ പരമേശ്വരൻ" },
-        image: "https://images.unsplash.com/photo-1545063914-a1a6ec821c88?auto=format&fit=crop&w=600&q=80",
+        image: "./assets/images/devata/shiva.png",
         mantras: {
           moola: "ॐ नमः शिवाय ॥ (ഓം നമഃ ശിവായ)",
           dhyanam: "ध्यायेन्नित्यं महेशं रजतगिरिनिभं चारुचन्द्रावतंसं रत्नाकल्पोज्ज्वलाङ्गं परशुमृगवराभीतिहस्तं प्रसन्नम् । पद्मासीनं समन्तात् स्तुतममरगणैर्व्याघ्रकृत्तिं वसानं विश्ववाद्यं विश्वबीजं निखिलभयहरं पञ्चवक्त्रं त्रिनेत्रम् ॥",
@@ -66,7 +66,7 @@
         id: "ganapati",
         name: { en: "Śrī Gaṇapati", ml: "ശ്രീ ഗണപതി" },
         title: { en: "Lord of Hosts & Obstacle Dispeller", ml: "ഗണങ്ങളുടെ നാഥനും വിഘ്നേശ്വരനും" },
-        image: "https://images.unsplash.com/photo-1567591414240-e145b3a4e98f?auto=format&fit=crop&w=600&q=80",
+        image: "./assets/images/devata/ganapati.png",
         mantras: {
           moola: "ॐ गं गणपतये नमः ॥ (ഓം ഗം ഗണപതയേ നമഃ)",
           dhyanam: "शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम् । प्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये ॥",
@@ -97,7 +97,7 @@
         id: "devi-sri",
         name: { en: "Śrī Mahālakṣmī", ml: "ശ്രീ മഹാലക്ഷ്മി" },
         title: { en: "Supreme Goddess of Prosperity & Light", ml: "ഐശ്വര്യത്തിന്റെയും പ്രകാശത്തിന്റെയും നാഥ" },
-        image: "https://images.unsplash.com/photo-1609358905581-e5085855f053?auto=format&fit=crop&w=600&q=80",
+        image: "./assets/images/devata/mahalakshmi.png",
         mantras: {
           moola: "ॐ श्रीं ह्रीं क्लीं महालक्ष्म्यै नमः ॥",
           dhyanam: "पद्मासने संस्थितां द्विभुजां पद्महस्तां वरदाभयहस्तां चन्द्रप्रभां सर्वसम्पत्प्रदात्रीं ध्यायेत् ॥",

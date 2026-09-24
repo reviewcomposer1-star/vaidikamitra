@@ -1,0 +1,20 @@
+
+/* =========================================================
+   Vaidika Mithra — PWA install experience
+   ========================================================= */
+#pwa-install-gate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at 50% 20%,rgba(184,93,25,.16),transparent 45%),#161311;color:#f5eadb;transition:opacity .25s ease,visibility .25s ease}
+#pwa-install-gate.pwa-hidden{opacity:0;visibility:hidden;pointer-events:none}
+.pwa-install-card{width:min(100%,390px);border:1px solid rgba(212,163,115,.25);background:rgba(35,29,25,.94);border-radius:28px;padding:30px 24px 24px;box-shadow:0 24px 80px rgba(0,0,0,.45);text-align:center}
+.pwa-install-mark{width:68px;height:68px;border-radius:20px;margin:0 auto 18px;display:grid;place-items:center;background:rgba(184,93,25,.14);border:1px solid rgba(184,93,25,.4);color:#d4a373}
+.pwa-install-mark img{width:68px;height:68px;border-radius:20px;object-fit:cover}
+.pwa-install-title{font-family:Cinzel,serif;font-size:23px;font-weight:700;letter-spacing:.08em;color:#d4a373}
+.pwa-install-subtitle{margin-top:8px;font-size:12px;line-height:1.7;color:#b9aea4}
+.pwa-install-actions{display:grid;gap:10px;margin-top:24px}
+.pwa-install-primary,.pwa-install-secondary{width:100%;border-radius:14px;padding:13px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s ease,opacity .15s ease}
+.pwa-install-primary{border:0;background:#b85d19;color:#fff;box-shadow:0 8px 24px rgba(184,93,25,.25)}
+.pwa-install-secondary{background:transparent;color:#c9beb4;border:1px solid rgba(212,163,115,.2)}
+.pwa-install-primary:active,.pwa-install-secondary:active{transform:scale(.98)}
+.pwa-install-status{display:none;margin-top:14px;padding:11px 12px;border-radius:12px;background:rgba(255,255,255,.04);font-size:11px;line-height:1.6;color:#c9beb4}
+.pwa-install-status.show{display:block}
+.pwa-install-version{margin-top:18px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#756b64}
+@media(min-width:700px){#pwa-install-gate{padding:40px}.pwa-install-card{padding:36px 30px}}

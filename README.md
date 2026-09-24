@@ -15,3 +15,7 @@ Structured PWA repository.
 - `assets/` — icons/images/audio
 
 Run with VS Code Live Server or `python -m http.server 8000`.
+
+
+## PWA installation
+Vaidika Mithra uses the browser's native PWA installation flow. On supported browsers, open the GitHub Pages URL and choose **Install & Enter**. The app uses `beforeinstallprompt` where available and `display: standalone` after installation. iOS Safari may require Share → Add to Home Screen.

@@ -13,10 +13,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/install.css">
 </head>
 <body class="h-full bg-vedic-sand dark:bg-vedic-granite text-vedic-charcoal dark:text-vedic-sand font-body antialiased flex flex-col transition-colors duration-200">
+  <!-- PWA ENTRY / INSTALL GATE -->
+  <section id="pwa-install-gate" aria-label="Vaidika Mithra installation">
+    <div class="pwa-install-card">
+      <div class="pwa-install-mark"><img src="./assets/icons/icon-192.png" alt="Vaidika Mithra"></div>
+      <div class="pwa-install-title">VAIDIKA MITHRA</div>
+      <div class="pwa-install-subtitle">Your digital Vaidika companion.<br>Install the app for a clean, focused experience.</div>
+      <div class="pwa-install-actions">
+        <button id="pwa-install-button" class="pwa-install-primary">Install &amp; Enter</button>
+        <button id="pwa-continue-button" class="pwa-install-secondary">Continue in Browser</button>
+      </div>
+      <div id="pwa-install-status" class="pwa-install-status" role="status"></div>
+      <div class="pwa-install-version">Vaidika Mithra • PWA</div>
+    </div>
+  </section>
 
-<body class="h-full bg-vedic-sand dark:bg-vedic-granite text-vedic-charcoal dark:text-vedic-sand font-body antialiased flex flex-col transition-colors duration-200">
 
   <!-- TOP HEADER -->
   <header class="sticky top-0 z-40 bg-vedic-cardLight/95 dark:bg-vedic-cardDark/95 backdrop-blur border-b border-vedic-borderLight dark:border-vedic-borderDark transition-colors">
@@ -60,17 +74,13 @@
 
     <!-- Secondary Nav Bar for Desktop/Tablet Viewports -->
     <nav class="hidden md:flex border-t border-vedic-borderLight/60 dark:border-vedic-borderDark/60 bg-vedic-parchment/50 dark:bg-vedic-charcoal/50 text-xs font-medium">
-      <div class="max-w-5xl mx-auto px-4 flex items-center space-x-6 h-10 w-full overflow-x-auto">
-        <button onclick="App.navigate('today')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="today"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> <span>Today</span></button>
-        <button onclick="App.navigate('events')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="events"><i data-lucide="clock" class="w-3.5 h-3.5"></i> <span>Events</span></button>
-        <button onclick="App.navigate('panchanga')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="panchanga"><i data-lucide="calendar-days" class="w-3.5 h-3.5"></i> <span>Panchanga</span></button>
-        <button onclick="App.navigate('sukta')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="sukta"><i data-lucide="book-open" class="w-3.5 h-3.5"></i> <span>Suktam</span></button>
-        <button onclick="App.navigate('devata')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="devata"><i data-lucide="sun" class="w-3.5 h-3.5"></i> <span>Devata</span></button>
-        <button onclick="App.navigate('karma')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="karma"><i data-lucide="flame" class="w-3.5 h-3.5"></i> <span>Karma</span></button>
-        <button onclick="App.navigate('texts')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="texts"><i data-lucide="scroll" class="w-3.5 h-3.5"></i> <span>Granthangal</span></button>
-        <button onclick="App.navigate('vrata')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="vrata"><i data-lucide="sunrise" class="w-3.5 h-3.5"></i> <span>Vrata</span></button>
-        <button onclick="App.navigate('tools')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="tools"><i data-lucide="disc" class="w-3.5 h-3.5"></i> <span>Tools</span></button>
-        <button onclick="App.navigate('favourites')" class="nav-desktop-tab hover:text-vedic-ochre flex items-center space-x-1" data-tab="favourites"><i data-lucide="bookmark" class="w-3.5 h-3.5"></i> <span>Favourites</span></button>
+      <div class="max-w-5xl mx-auto px-4 flex items-center justify-between gap-2 h-10 w-full overflow-x-auto">
+        <button onclick="App.navigate('today')" class="nav-desktop-tab whitespace-nowrap hover:text-vedic-ochre flex items-center space-x-1" data-tab="today"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> <span>Today</span></button>
+        <button onclick="App.navigate('events')" class="nav-desktop-tab whitespace-nowrap hover:text-vedic-ochre flex items-center space-x-1" data-tab="events"><i data-lucide="clock" class="w-3.5 h-3.5"></i> <span>Events</span></button>
+        <button onclick="App.navigate('time')" class="nav-desktop-tab whitespace-nowrap hover:text-vedic-ochre flex items-center space-x-1" data-tab="time"><i data-lucide="calendar-clock" class="w-3.5 h-3.5"></i> <span>Time</span></button>
+        <button onclick="App.navigate('knowledge')" class="nav-desktop-tab whitespace-nowrap hover:text-vedic-ochre flex items-center space-x-1" data-tab="knowledge"><i data-lucide="book-open" class="w-3.5 h-3.5"></i> <span>Knowledge</span></button>
+        <button onclick="App.navigate('practice')" class="nav-desktop-tab whitespace-nowrap hover:text-vedic-ochre flex items-center space-x-1" data-tab="practice"><i data-lucide="flame" class="w-3.5 h-3.5"></i> <span>Practice</span></button>
+        <button onclick="App.navigate('tools')" class="nav-desktop-tab whitespace-nowrap hover:text-vedic-ochre flex items-center space-x-1" data-tab="tools"><i data-lucide="wrench" class="w-3.5 h-3.5"></i> <span>Tools</span></button>
       </div>
     </nav>
   </header>
@@ -81,12 +91,13 @@
   </main>
 
   <!-- BOTTOM NAVIGATION BAR (Mobile Primary) -->
-  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-vedic-cardLight/95 dark:bg-vedic-cardDark/95 backdrop-blur border-t border-vedic-borderLight dark:border-vedic-borderDark px-2 py-1 flex justify-around items-center text-[10px] font-medium">
-    <button onclick="App.navigate('today')" class="nav-btn flex flex-col items-center py-1 px-2 text-gray-500 dark:text-gray-400" data-page="today"><i data-lucide="calendar" class="w-5 h-5 mb-0.5"></i><span>Today</span></button>
-    <button onclick="App.navigate('events')" class="nav-btn flex flex-col items-center py-1 px-2 text-gray-500 dark:text-gray-400" data-page="events"><i data-lucide="clock" class="w-5 h-5 mb-0.5"></i><span>Events</span></button>
-    <button onclick="App.navigate('panchanga')" class="nav-btn flex flex-col items-center py-1 px-2 text-gray-500 dark:text-gray-400" data-page="panchanga"><i data-lucide="calendar-days" class="w-5 h-5 mb-0.5"></i><span>Panchanga</span></button>
-    <button onclick="App.navigate('sukta')" class="nav-btn flex flex-col items-center py-1 px-2 text-gray-500 dark:text-gray-400" data-page="sukta"><i data-lucide="book-open" class="w-5 h-5 mb-0.5"></i><span>Suktam</span></button>
-    <button onclick="App.openMoreMenu()" class="nav-btn flex flex-col items-center py-1 px-2 text-gray-500 dark:text-gray-400"><i data-lucide="grid" class="w-5 h-5 mb-0.5"></i><span>More</span></button>
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-vedic-cardLight/95 dark:bg-vedic-cardDark/95 backdrop-blur border-t border-vedic-borderLight dark:border-vedic-borderDark px-1 py-1 flex items-center justify-between text-[9px] font-medium">
+    <button onclick="App.navigate('today')" class="nav-btn flex-1 min-w-0 flex flex-col items-center py-1 px-0.5 text-gray-500 dark:text-gray-400" data-page="today"><i data-lucide="calendar" class="w-5 h-5 mb-0.5"></i><span class="truncate">Today</span></button>
+    <button onclick="App.navigate('events')" class="nav-btn flex-1 min-w-0 flex flex-col items-center py-1 px-0.5 text-gray-500 dark:text-gray-400" data-page="events"><i data-lucide="clock" class="w-5 h-5 mb-0.5"></i><span class="truncate">Events</span></button>
+    <button onclick="App.navigate('time')" class="nav-btn flex-1 min-w-0 flex flex-col items-center py-1 px-0.5 text-gray-500 dark:text-gray-400" data-page="time"><i data-lucide="calendar-clock" class="w-5 h-5 mb-0.5"></i><span class="truncate">Time</span></button>
+    <button onclick="App.navigate('knowledge')" class="nav-btn flex-1 min-w-0 flex flex-col items-center py-1 px-0.5 text-gray-500 dark:text-gray-400" data-page="knowledge"><i data-lucide="book-open" class="w-5 h-5 mb-0.5"></i><span class="truncate">Knowledge</span></button>
+    <button onclick="App.navigate('practice')" class="nav-btn flex-1 min-w-0 flex flex-col items-center py-1 px-0.5 text-gray-500 dark:text-gray-400" data-page="practice"><i data-lucide="flame" class="w-5 h-5 mb-0.5"></i><span class="truncate">Practice</span></button>
+    <button onclick="App.navigate('tools')" class="nav-btn flex-1 min-w-0 flex flex-col items-center py-1 px-0.5 text-gray-500 dark:text-gray-400" data-page="tools"><i data-lucide="wrench" class="w-5 h-5 mb-0.5"></i><span class="truncate">Tools</span></button>
   </nav>
 
   <!-- MORE SHEETS MODAL (Mobile Overflow) -->
@@ -243,6 +254,9 @@
 <script src="./js/app/app.js"></script>
 <script src="./js/pages/pages.js"></script>
 <script src="./js/app/v2-customizations.js"></script>
+<script src="./js/app/architecture.js"></script>
+<script src="./js/app/install.js"></script>
+<script src="./js/app/sw-register.js"></script>
 <script src="./js/app/main.js"></script>
 </body>
 </html>
