@@ -1,0 +1,11 @@
+{
+  "name":"Vaidika Mithra",
+  "short_name":"VaidikaMithra",
+  "start_url":"./index.html",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#161311",
+  "theme_color":"#B85D19",
+  "description":"Digital Vaidika companion for students and Purohitas.",
+  "icons":[{"src":"./assets/icons/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"./assets/icons/icon-512.png","sizes":"512x512","type":"image/png"}]
+}
